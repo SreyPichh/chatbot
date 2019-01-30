@@ -9,7 +9,7 @@ if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'test') {
 }
 
 // HTTP Port to run our web application
-cfg.port = process.env.PORT || 80;
+cfg.port = process.env.PORT || 3000;
 cfg.secret = process.env.APP_SECRET || 'secret';
 cfg.dialogflow_projectId = process.env.DIALOGFLOW_PROJECTID;
 
