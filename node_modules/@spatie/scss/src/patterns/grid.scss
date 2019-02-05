@@ -1,0 +1,28 @@
+$av-namespace: 'grid';
+$av-element-name: 'cell';
+$av-gutter: grid(spacing);
+$av-width-class-namespace: '-width-';
+$av-width-class-style: 'fraction';
+$av-widths: grid(widths);
+$av-breakpoints: (
+    s:  '(min-width: #{breakpoint(s, horizontal)})',
+    m:  '(min-width: #{breakpoint(m, horizontal)})',
+    l:  '(min-width: #{breakpoint(l, horizontal)})',
+);
+$av-modifier-class-chain: '.-';
+
+// Enable/disable grid layouts
+$av-enable-grid-center: true;
+$av-enable-grid-cell-center: true;
+$av-enable-grid-right: true;
+$av-enable-grid-middle: true;
+$av-enable-grid-bottom: true;
+$av-enable-grid-flush: true;
+$av-enable-grid-tiny: false;
+$av-enable-grid-small: false;
+$av-enable-grid-large: false;
+$av-enable-grid-huge: false;
+$av-enable-grid-auto: true;
+$av-enable-grid-rev: true;
+
+@import 'node_modules/avalanche-css/avalanche';

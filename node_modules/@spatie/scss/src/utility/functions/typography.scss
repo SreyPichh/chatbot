@@ -1,0 +1,15 @@
+@function font-family($key: default) {
+    @return mapping($font-family, $key);
+}
+
+@function font-size($key: default, $map: rem) {
+    @return mapping(mapping($font-size, $map), $key);
+}
+
+@function font-weight($key: default, $family: default) {
+    @return mapping(mapping($font-weight, $family), $key);
+}
+
+@function line-height($key: default) {
+    @return mapping($line-height, $key);
+}

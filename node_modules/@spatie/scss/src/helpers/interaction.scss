@@ -1,0 +1,18 @@
+.h-interaction-clickable {
+    cursor: pointer;
+}
+
+.h-interaction-draggable {
+    cursor: move;
+}
+
+.h-interaction-sortable {
+    cursor: ns-resize;
+}
+
+.h-interaction-unselectable {
+    -webkit-user-select:      none;
+       -moz-user-select: -moz-none;
+        -ms-user-select:      none;
+            user-select:      none;
+}

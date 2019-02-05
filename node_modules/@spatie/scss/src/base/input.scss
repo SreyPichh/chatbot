@@ -1,0 +1,40 @@
+input,
+.input {
+    width: 100%;
+    max-width: 100%;
+    height: input(height);
+    padding: 0 input(padding);
+
+    color: input(color);
+    background: white();
+    border: input(border-width) input(border-color) solid;
+    border-radius: input(border-radius);
+    box-shadow: input(box-shadow);
+
+    transition: border-color .1s linear;
+
+    @include form-placeholder() {
+        color: input(placeholder-color);
+    }
+    @include form-placeholder(':focus') {
+        color: white(0);
+    }
+
+    &:hover {
+        border-color: input(border-color-hover);
+    }
+
+    &:focus {
+        border-color: input(border-color-focus);
+        outline: 0;
+    }
+
+    &.-invalid {
+        border-color: red();
+
+        &:hover,
+        &:focus {
+            border-color: red(dark);
+        }
+    }
+}
