@@ -2,7 +2,7 @@
 var dotenv = require('dotenv');
 var cfg = {};
 
-if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'test') {
+if (process.env.NODE_ENV == 'production' && process.env.NODE_ENV !== 'test') {
   dotenv.config({path: '.env'});
 } else {
   dotenv.config({path: '.env.test', silent: true});
