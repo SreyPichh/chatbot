@@ -1,4 +1,0 @@
-@function breakpoint($key: s, $direction: horizontal) {
-    $breakpoints-direction: mapping($breakpoint, $direction);
-    @return mapping($breakpoints-direction, $key);
-}
