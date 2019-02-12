@@ -76,6 +76,7 @@ function getAuthenticatedClient(argument) {
 			keys.web.client_secret,
 			keys.web.redirect_uri[0]
 			);
+		console.log("********************************");
 		console.log(oAuth2Client);
 		const authorizeUrl = oAuth2Client.generateAuthUrl({
 			access_type: 'offline',
