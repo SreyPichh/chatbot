@@ -42,7 +42,7 @@ Dialogflow.prototype.send = function() {
                 if (self.queryResult.intent) {
                     self.result.Intent = `${self.queryResult.intent.displayName}`;
                 } else {
-                    console.log(`  No intent matched.`);
+                    console.log(`No intent matched.`);
                 }
                 console.log(self.result);
                 resolve(self.result);
